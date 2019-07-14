@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d2d2d2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="TExt"
+            android:textSize="80dp"
+            android:id="@+id/tv02"
+            android:layout_width="281dp"
+            android:layout_height="103dp"
+            android:layout_above="@id/tv01"
+            android:layout_alignStart="@id/tv01"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp" />
+        <TextView
+            android:id="@+id/tv01"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <ImageButton
+            android:id="@+id/btn01"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_above="@+id/tv01"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginBottom="-50dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:src="@drawable/a"
+            android:theme="@style/white" />
+
+        <ImageButton
+            android:id="@+id/btn02"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_above="@+id/tv01"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="-238dp"
+            android:layout_marginBottom="-175dp"
+            android:layout_toStartOf="@+id/tv01"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:src="@drawable/d"
+            android:theme="@style/white" />
+
+        <ImageButton
+            android:id="@+id/btn03"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_above="@id/tv01"
+            android:layout_alignStart="@+id/btn01"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-192dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:src="@drawable/b"
+            android:theme="@style/white" />
+
+        <ImageButton
+            android:id="@+id/btn04"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_above="@+id/tv01"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="164dp"
+            android:layout_marginBottom="-175dp"
+            android:layout_toEndOf="@+id/tv01"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:src="@drawable/c"
+            android:theme="@style/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
